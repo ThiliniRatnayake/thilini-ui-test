@@ -1,0 +1,129 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-20T12:12:03.682Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2278376653,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Check borrowing capacity",
+        "description": "",
+        "id": "borrowing-page;check-borrowing-capacity",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: span[class\u003d\u0027borrow__result__text\u0027] (tried for 10 second(s) with 500 milliseconds interval)\nBuild info: version: \u00273.141.59\u0027, revision: \u0027e82be7d358\u0027, time: \u00272018-11-14T08:17:03\u0027\nSystem info: host: \u0027Lakindus-MBP.lan\u0027, ip: \u0027fe80:0:0:0:1890:3e00:ac2f:ee09%en0\u0027, os.name: \u0027Mac OS X\u0027, os.arch: \u0027x86_64\u0027, os.version: \u002710.13.6\u0027, java.version: \u00271.8.0_112\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/k6/d5t_7g_957q...}, goog:chromeOptions: {debuggerAddress: localhost:49698}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}\nSession ID: a595f2b986d4819bec08f3d899b1f49d\n\tat org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)\n\tat org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)\n\tat au.com.anz.thilini.infrastructure.driver.Wait.WaitForAnElementId(Wait.java:52)\n\tat au.com.anz.thilini.infrastructure.driver.Wait.waitForElementAttributeEqualsString(Wait.java:45)\n\tat au.com.anz.thilini.borrowingpage.BorrowingPage.addApplicationtypeSingle(BorrowingPage.java:89)\n\tat au.com.anz.thilini.borrowingpage.BorrowingPageSteps.theUserSelectApplicationTypeSingle(BorrowingPageSteps.java:24)\n\tat ✽.the user add all fields(file:src/test/resources/au/com/anz/thilini/borrowingestimate.feature:4)\n",
+              "duration": 14078067101,
+              "status": "failed"
+            },
+            "line": 4,
+            "name": "the user add all fields",
+            "match": {
+              "location": "BorrowingPageSteps.theUserSelectApplicationTypeSingle()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 12328,
+              "status": "skipped"
+            },
+            "line": 5,
+            "name": "calculate borrowing capacity",
+            "match": {
+              "location": "BorrowingPageSteps.test()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Borrowing page",
+    "description": "",
+    "id": "borrowing-page",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/au/com/anz/thilini/borrowingestimate.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-20T12:12:20.045Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1660919578,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Using start over button",
+        "description": "",
+        "id": "selecting-startover-button;using-start-over-button",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2902428623,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user has selected start over button",
+            "match": {
+              "location": "StartOverButtonSteps.theUserNavigatestoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2146840904,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters field values",
+            "match": {
+              "location": "StartOverButtonSteps.theUserEnterFieldValuesAndClickCalculate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 288069387,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user has clicked start over button",
+            "match": {
+              "location": "StartOverButtonSteps.theUserHasSelectedStartOverButton()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Selecting StartOver button",
+    "description": "",
+    "id": "selecting-startover-button",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/au/com/anz/thilini/startoverbutton.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,19 @@
+-------------------------------------------------------------------------------
+Test set: au.com.anz.thilini.BorrowingEstimateTest
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 18.286 sec <<< FAILURE!
+Check borrowing capacity(Borrowing page)  Time elapsed: 17.855 sec  <<< ERROR!
+org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: span[class='borrow__result__text'] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Lakindus-MBP.lan', ip: 'fe80:0:0:0:18d5:424a:6f3e:e387%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 77.0.3865.120, chrome: {chromedriverVersion: 77.0.3865.40 (f484704e052e0..., userDataDir: /var/folders/k6/d5t_7g_957q...}, goog:chromeOptions: {debuggerAddress: localhost:49502}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: e7f51e14e9e2bf5417f866d5ae999700
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
+	at au.com.anz.thilini.infrastructure.driver.Wait.WaitForAnElementId(Wait.java:52)
+	at au.com.anz.thilini.infrastructure.driver.Wait.waitForElementAttributeEqualsString(Wait.java:45)
+	at au.com.anz.thilini.borrowingpage.BorrowingPage.addApplicationtypeSingle(BorrowingPage.java:89)
+	at au.com.anz.thilini.borrowingpage.BorrowingPageSteps.theUserSelectApplicationTypeSingle(BorrowingPageSteps.java:24)
+	at ✽.the user add all fields(file:src/test/resources/au/com/anz/thilini/borrowingestimate.feature:4)
+

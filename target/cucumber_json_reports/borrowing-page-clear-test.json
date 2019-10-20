@@ -1,0 +1,82 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2019-10-20T12:09:39.216Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2347205306,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Setup.setWebDriver()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Using start over button",
+        "description": "",
+        "id": "selecting-startover-button;using-start-over-button",
+        "after": [
+          {
+            "result": {
+              "duration": 138092107,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TearDown.quitDriver(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2552794885,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user has selected start over button",
+            "match": {
+              "location": "StartOverButtonSteps.theUserNavigatestoPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2193558389,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user enters field values",
+            "match": {
+              "location": "StartOverButtonSteps.theUserEnterFieldValuesAndClickCalculate()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 312791786,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the user has clicked start over button",
+            "match": {
+              "location": "StartOverButtonSteps.theUserHasSelectedStartOverButton()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Selecting StartOver button",
+    "description": "",
+    "id": "selecting-startover-button",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/au/com/anz/thilini/startoverbutton.feature",
+    "tags": []
+  }
+]
